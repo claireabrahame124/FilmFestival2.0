@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puducherry Film Festival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+function openPopup() {
+    document.getElementById('registrationPopup').classList.add('active');
+}
+
+function closePopup() {
+    document.getElementById('registrationPopup').classList.remove('active');
+}
+
+function submitForm(e) {
+    e.preventDefault();
+    alert('Thank you for registering! We will contact you soon.');
+    closePopup();
+}
+
+document.getElementById('registrationPopup').addEventListener('click', function (e) {
+    if (e.target === this) closePopup();
+});
+</script>
