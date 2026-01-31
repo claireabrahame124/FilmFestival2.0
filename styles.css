@@ -21,6 +21,7 @@
             color: var(--text-dark);
             line-height: 1.6;
 background-color: var(--primary-color);
+;
 
         }
         
@@ -477,6 +478,15 @@ height: 100%; -->
         
         .footer-bottom {
             text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-family: 'Myriad Pro', sans-serif;
+            font-weight: 400;
+        }
+        
+.footer-top {
+
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid rgba(255,255,255,0.2);

@@ -1,0 +1,26 @@
+https://www.facebook.com/people/Pondicherry-Film-Festival/61584920428255/?rdid=7QWR8yDOHLjdwNNv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1H7KkGWTcQ%2F
+
+https://www.instagram.com/puducherry_filmfestival/
+https://x.com/PFestival58216
+
+https://www.instagram.com/puducherry_filmfestival/
+https://x.com/PFestival58216
+
+https://x.com/PFestival58216
+
+https://www.instagram.com/puducherry_filmfestival?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Icon</title>
+</head>
+<body style="background:#000; display:flex; justify-content:center; align-items:center; height:100vh;">
+
+    <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+        <path d="M18.244 2.25h3.308l-7.227 8.26L22.8 21.75h-6.63l-5.196-6.79-5.94 6.79H1.724l7.73-8.835L1.2 2.25h6.797l4.694 6.207L18.244 2.25zm-1.161 17.52h1.833L6.996 4.126H5.03l12.053 15.644z"/>
+    </svg>
+
+</body>
+</html>
