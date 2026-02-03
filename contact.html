@@ -18,40 +18,61 @@
 
         <!-- Navigation -->
         <nav class="nav-center">
-            <ul class="main-nav" id="main-nav">
+            <ul class="main-nav" id="mainNav">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a><div class="dropdown">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">About</a>
+                    <div class="dropdown">
                         <a href="about.html" class="dropdown-link">About PFF</a>
                         <a href="organizing-committee.html" class="dropdown-link">Organising Team</a>
-                    </div></li>
-                <li class="nav-item"><a href="#" class="nav-link">Awards</a><div class="dropdown">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">Awards</a>
+                    <div class="dropdown">
                         <a href="awards.html" class="dropdown-link">Sankardoss Swamigal Award</a>
-                    </div></li>
-                <li class="nav-item"><a href="#" class="nav-link">Program 2026</a><div class="dropdown">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">Program 2026</a>
+                    <div class="dropdown">
                         <a href="indian-panorama.html" class="dropdown-link">Indian Panorama</a>
                         <a href="international-films.html" class="dropdown-link">International Films</a>
                         <a href="childrens-films.html" class="dropdown-link">Children's Films</a>
                         <a href="documentary-films.html" class="dropdown-link">Documentary Films</a>
-                    </div></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sessions</a><div class="dropdown">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">Sessions</a>
+                    <div class="dropdown">
                         <a href="master-classes.html" class="dropdown-link">Master Classes</a>
-                    </div></li>
-                <li class="nav-item"><a href="#" class="nav-link">Festival</a><div class="dropdown">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">Festival</a>
+                    <div class="dropdown">
                         <a href="gallery.html" class="dropdown-link">Gallery</a>
                         <a href="venue.html" class="dropdown-link">Venue</a>
-                    </div></li>
-                <li class="nav-item"><a href="#" class="nav-link">Download</a><div class="dropdown">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">Download</a>
+                    <div class="dropdown">
                         <a href="film-schedule.html" class="dropdown-link">Film Schedule</a>
-                    </div></li>
-                <li class="nav-item"><a href="#" class="nav-link">Others</a><div class="dropdown">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">Others</a>
+                    <div class="dropdown">
                         <a href="filmmakers-paradise.html" class="dropdown-link">Puducherry - a filmmaker's paradise</a>
                         <a href="arts-crafts.html" class="dropdown-link">Arts and crafts of Puducherry</a>
                         <a href="padma-awardees.html" class="dropdown-link">Our Padma Awardees</a>
-                    </div></li>
+                    </div>
+                </li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
 
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">☰</button>
         </nav>
 
         <!-- Right Logo -->
@@ -86,13 +107,13 @@
 
                 <div class="contact-card">
                     <h4>Contact Details</h4>
-                    <p><strong>Email:</strong> info@puducherryfilmfest.in</p>
+                    <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="650c0b030a2515100110060d0017171c030c0908030016114b0c0b">[email&#160;protected]</a></p>
                     <p><strong>Phone:</strong> +91-XXX-XXXXXXX</p>
                 </div>
 
                 <div class="contact-card">
                     <h4>For Film Submissions</h4>
-                    <p><strong>Email:</strong> submissions@puducherryfilmfest.in</p>
+                    <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="235056414e4a50504a4c4d506353564756404b4651515a454a4f4e454650570d4a4d">[email&#160;protected]</a></p>
                     <p>Please refer to our submission guidelines before sending your entries.</p>
                 </div>
 
@@ -146,15 +167,4 @@ https://www.instagram.com/puducherry_filmfestival?utm_source=ig_web_button_share
                     </a>
  <a href="https://x.com/PFestival58216" class="social-link">
  <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
-        <path d="M18.244 2.25h3.308l-7.227 8.26L22.8 21.75h-6.63l-5.196-6.79-5.94 6.79H1.724l7.73-8.835L1.2 2.25h6.797l4.694 6.207L18.244 2.25zm-1.161 17.52h1.833L6.996 4.126H5.03l12.053 15.644z"/>
-    </svg></a>
-                </div>
-            </div>
-        </div>
-</div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Puducherry Film Festival</p>
-        </div>
-    </footer>
-</body>
-</html>
+        <path d="M18.244 2.25h3.308l-7.227 8.26L22.8 21.75h-6.63l-5.196-6.79-5.94 6.79H1.724l7.73-8.835L1.2 2.25h6.797l4.694 6.207L18.244 2.25zm-1.161 17.52h1.
