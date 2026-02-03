@@ -31,7 +31,7 @@
 
         <!-- Navigation -->
         <nav class="nav-center">
-            <ul class="main-nav" id="mainNav">
+            <ul class="main-nav" id="main-nav">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" onclick="toggleDropdown(event, this)">About</a>
@@ -260,16 +260,16 @@
 <script>
 // Mobile menu toggle
 function toggleMobileMenu() {
-    const mainNav = document.getElementById('mainNav');
-    mainNav.classList.toggle('active');
+    const main-nav = document.getElementById('main-nav');
+    main-nav.classList.toggle('active');
 }
 
 // Dropdown toggle for mobile
 function toggleDropdown(event, element) {
     if (window.innerWidth <= 768) {
         event.preventDefault();
-        const navItem = element.parentElement;
-        navItem.classList.toggle('active');
+        const nav-item = element.parentElement;
+        nav-item.classList.toggle('active');
     }
 }
 
@@ -299,12 +299,12 @@ document.getElementById('registrationPopup').addEventListener('click', function 
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', function(e) {
-    const mainNav = document.getElementById('mainNav');
+    const main-av = document.getElementById('main-nav');
     const menuBtn = document.querySelector('.mobile-menu-btn');
     
-    if (window.innerWidth <= 768 && mainNav.classList.contains('active')) {
-        if (!mainNav.contains(e.target) && !menuBtn.contains(e.target)) {
-            mainNav.classList.remove('active');
+    if (window.innerWidth <= 768 && main-nav.classList.contains('active')) {
+        if (!main-nav.contains(e.target) && !menuBtn.contains(e.target)) {
+            main-nav.classList.remove('active');
         }
     }
 });
@@ -323,9 +323,9 @@ let resizeTimer;
 window.addEventListener('resize', function() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
-        const mainNav = document.getElementById('mainNav');
-        if (window.innerWidth > 768 && mainNav.classList.contains('active')) {
-            mainNav.classList.remove('active');
+        const main-nav = document.getElementById('main-nav');
+        if (window.innerWidth > 768 && main-nav.classList.contains('active')) {
+            main-nav.classList.remove('active');
         }
     }, 250);
 });
