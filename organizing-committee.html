@@ -154,7 +154,8 @@
                 <li class="nav-item"><a href="contact.html" class="nav-link" onclick="toggleDropdown(event, this)">Contact</a></li>
             </ul>
 
-            <button class="mobile-menu-btn">☰</button>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">☰</button>
         </nav>
 
         <!-- Right Logo -->
@@ -290,5 +291,45 @@ https://www.instagram.com/puducherry_filmfestival?utm_source=ig_web_button_share
             <p>&copy; 2026 Puducherry Film Festival</p>
         </div>
     </footer>
+<script>
+// Mobile menu toggle
+function toggleMobileMenu() {
+    const mainNav = document.getElementById('mainNav');
+    mainNav.classList.toggle('active');
+}
+
+// Dropdown toggle for mobile
+function toggleDropdown(event, element) {
+    if (window.innerWidth <= 768) {
+        event.preventDefault();
+        const navItem = element.parentElement;
+        navItem.classList.toggle('active');
+    }
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(e) {
+    const mainNav = document.getElementById('mainNav');
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    
+    if (window.innerWidth <= 768 && mainNav && mainNav.classList.contains('active')) {
+        if (!mainNav.contains(e.target) && !menuBtn.contains(e.target)) {
+            mainNav.classList.remove('active');
+        }
+    }
+});
+
+// Handle window resize
+let resizeTimer;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        const mainNav = document.getElementById('mainNav');
+        if (mainNav && window.innerWidth > 768 && mainNav.classList.contains('active')) {
+            mainNav.classList.remove('active');
+        }
+    }, 250);
+});
+</script>
 </body>
 </html>
